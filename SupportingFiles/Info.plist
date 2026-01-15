@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Базовые настройки приложения -->
+    <key>CFBundleDisplayName</key>
+    <string>Kazan Pulse</string>
+    
+    <key>CFBundleIdentifier</key>
+    <string>com.ilyas.KazanPulse</string>
+    
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    
+    <!-- URL Schemes для Google Sign-In -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>google.signin</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <!-- Ваш REVERSED_CLIENT_ID из GoogleService-Info.plist -->
+                <string>com.googleusercontent.apps.720665589791-khsn7mas42pvsfpp404bba286iv5vdn1</string>
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Разрешения для фото -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Для загрузки фото событий</string>
+    
+    <!-- Разрешения для локации -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Для показа событий рядом с вами</string>
+    
+    <!-- Разрешения для камеры -->
+    <key>NSCameraUsageDescription</key>
+    <string>Для добавления фото событий</string>
+    
+    <!-- Для iOS 14+ -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>googlechromes</string>
+        <string>comgooglemaps</string>
+        <string>yandexmaps</string>
+        <string>yandexnavi</string>
+    </array>
+</dict>
+</plist>
